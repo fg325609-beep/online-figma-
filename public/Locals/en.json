@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "logo": "Education",
+    "links": {
+      "home": "Home",
+      "courses": "Courses",
+      "page": "Page",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "actions": {
+      "signIn": "Sign In",
+      "signUp": "Sign Up"
+    }
+  }
+}

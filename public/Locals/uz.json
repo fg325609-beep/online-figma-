@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "logo": "Education",
+    "links": {
+      "home": "Bosh sahifa",
+      "courses": "Kurslar",
+      "page": "Sahifa",
+      "blog": "Blog",
+      "contact": "Aloqa"
+    },
+    "actions": {
+      "signIn": "Kirish",
+      "signUp": "Ro'yxatdan o'tish"
+    }
+  }
+}

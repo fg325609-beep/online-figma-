@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './companents/Header/Header'
+import './i18n';
 const App = () => {
   return (
     <div>

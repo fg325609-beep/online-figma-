@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "logo": "Education",
+    "links": {
+      "home": "Главная",
+      "courses": "Курсы",
+      "page": "Страница",
+      "blog": "Блог",
+      "contact": "Контакты"
+    },
+    "actions": {
+      "signIn": "Войти",
+      "signUp": "Регистрация"
+    }
+  }
+}

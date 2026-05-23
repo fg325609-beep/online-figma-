@@ -12,5 +12,15 @@
       "signIn": "Sign In",
       "signUp": "Sign Up"
     }
+  },
+  "hero": {
+    "title": "Self–Paced Learning Courses Online",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ameth, vestibulum euismod nullam elementum. Urna, posuere nisi sit gravida massa. Ultrices bibendum sagittis pellentesque vitae sit.",
+    "button": "Start a course",
+    "stats": {
+      "courses": "Online Courses",
+      "instructors": "Expert Instructors",
+      "stories": "Success Stories"
+    }
   }
 }

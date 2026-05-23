@@ -12,5 +12,15 @@
       "signIn": "Kirish",
       "signUp": "Ro'yxatdan o'tish"
     }
+  },
+  "hero": {
+    "title": "Onlayn Mustaqil Ta'lim Kurslari",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ameth, vestibulum euismod nullam elementum. Urna, posuere nisi sit gravida massa. Ultrices bibendum sagittis pellentesque vitae sit.",
+    "button": "Kursni boshlash",
+    "stats": {
+      "courses": "Onlayn Kurslar",
+      "instructors": "Malakali Mentorlar",
+      "stories": "Muvaffaqiyat Hikoyalari"
+    }
   }
 }

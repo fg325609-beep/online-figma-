@@ -12,5 +12,15 @@
       "signIn": "Войти",
       "signUp": "Регистрация"
     }
+  },
+  "hero": {
+    "title": "Онлайн-курсы для самостоятельного обучения",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ameth, vestibulum euismod nullam elementum. Urna, posuere nisi sit gravida massa. Ultrices bibendum sagittis pellentesque vitae sit.",
+    "button": "Начать курс",
+    "stats": {
+      "courses": "Онлайн-курсов",
+      "instructors": "Экспертных инструкторов",
+      "stories": "Историй успеха"
+    }
   }
 }

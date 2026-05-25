@@ -21,6 +21,18 @@
       "courses": "Onlayn Kurslar",
       "instructors": "Malakali Mentorlar",
       "stories": "Muvaffaqiyat Hikoyalari"
+      
     }
+  },
+  "hero": {
+    "title": "Platformamiz raqamlarda",
+    "description": "Biz bilan birga oʻsing va maqsadlaringizga erishing.",
+    "button": "Boshlash"
+  },
+  "stats": {
+    "courses": "Onlayn kurslar",
+    "instructors": "Malakali ustozlar",
+    "stories": "Muvaffaqiyat hikoyalari"
   }
+  
 }

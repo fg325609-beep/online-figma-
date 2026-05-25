@@ -22,5 +22,25 @@
       "instructors": "Expert Instructors",
       "stories": "Success Stories"
     }
+  },
+  "hero": {
+    "title": "Our Platform in Numbers",
+    "description": "Grow with us and achieve your professional goals.",
+    "button": "Get Started"
+  },
+  "stats": {
+    "courses": "Online Courses",
+    "instructors": "Expert Instructors",
+    "stories": "Success Stories"
+  },
+  "hero": {
+    "title": "Наша платформа в цифрах",
+    "description": "Растите вместе с нами и достигайте своих целей.",
+    "button": "Начать"
+  },
+  "stats": {
+    "courses": "Онлайн-курсы",
+    "instructors": "Эксперты-инструкторы",
+    "stories": "Истории успеха"
   }
 }

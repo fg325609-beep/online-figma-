@@ -69,4 +69,89 @@ opacity: 2;
         }
 
     }
+    .bootom-hero{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 0 auto;
+        gap: 60px;
+        padding: 50px ;
+        box-shadow: 1px 3px 9px rgb(47, 48, 48);
+        width: 40%;
+        transform: translate(0px,-80px);
+        border-radius: 5px;
+        background: white;
+        .hero-icon{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+$primary-blue: #0066ff; // Rasmdagi ko'k rang
+
+.bootom-hero {
+  display: flex;
+  justify-content: space-around; // Elementlarni teng masofada taqsimlaydi
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff; // Orqa fon oq
+  border-radius: 8px;     // Burchaklarni bir oz yumshatish
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); // Mayin soya
+
+  .hero-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; // Ikonka va matn orasidagi masofa
+
+    .hero-icon {
+      svg {
+        width: 55px;  // Ikonka o'lchami
+        height: 55px;
+        stroke: $primary-blue;
+        color: $primary-blue;
+      }
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .counter-wrapper {
+        display: flex;
+        align-items: baseline; // Raqam va plyusni tag chizig'i bo'yicha tekislaydi
+        color: #1a1a1a;        // To'q rang
+
+        .count-up-text {
+          font-size: 36px;     // Katta va qalin raqamlar
+          font-weight: 700;
+          font-family: sans-serif;
+        }
+
+        .count-up-plus {
+          font-size: 32px;     // Plyus belgisi raqamdan bir ozgina kichikroq
+          font-weight: 600;
+          margin-left: 2px;    // Raqamga juda yopishib qolmasligi uchun
+        }
+      }
+
+      .hero-label {
+        margin: 4px 0 0 0;
+        font-size: 16px;
+        color: $primary-blue; 
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .bootom-hero {
+    flex-direction: column; 
+    gap: 30px;
+    align-items: flex-start;
+    padding-left: 20%;      
+  }
 }

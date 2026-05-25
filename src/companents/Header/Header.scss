@@ -1,141 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-*{
-    margin: 0;
-    padding: 0px;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: DM Sans;
 
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 99;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Pastki qismiga mayin soya */
+}
+
+/* 🎯 Konteyner - sayt mazmunini o'rtaga tekislash va chekkalardan xavfsiz masofa saqlash uchun */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
   position: relative;
+  background-color: #ffffff;
 }
 
-// Katta ekranlar uchun (Kompyuterda yonma-yon turadi)
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 💻 Katta ekranlar uchun (Kompyuter versiyasi) */
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 30px; // Ro'yxat va Tugmalar orasidagi masofa
-
-  .nav-list {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-  }
-
-  .nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
+  gap: 40px;
 }
 
-.hamburger {
-  display: none; // Kompyuterda yashirin
+.nav-menu .nav-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-// 📱 Mobil ekranlar uchun (Maksimal 768px kenglikda)
-@media (max-width: 768px) {
-  .hamburger {
-    display: block; // Gamburger tugmasi chiqadi
-    z-index: 10;
-    
-    &.active {
-      .bar:nth-child(2) { opacity: 0; }
-      .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-      .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-    }
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    left: -100%; // Ekrandan tashqarida turadi
-    width: 70%;  // Ekranning 70% qismini egallaydi (xohlasangiz 100% qiling)
-    height: 100vh;
-    background-color: #ffffff;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    
-    // Ichidagi elementlarni tepadan pastga qator qilib joylashtiramiz
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    padding: 100px 30px 30px 30px; // Gamburger to'sib qo'ymasligi uchun tepadan joy tashlaymiz
-    gap: 40px; 
-    transition: 0.4s ease-in-out;
-
-    &.active {
-      left: 0; // Menyu ochilganda ekranga sirg'alib kiradi
-    }
-
-    .nav-list {
-      flex-direction: column; // Linklar tepadan pastga tushadi
-      gap: 25px;
-      padding: 0;
-      width: 100%;
-    }
-
-    .nav-actions {
-      flex-direction: column; // Tugmalar ham mobil versiyada tepadan pastga tushadi
-      align-items: flex-start;
-      gap: 20px;
-      width: 100%;
-      border-top: 1px solid #eee; // Ajratuvchi chiziq
-      padding-top: 20px;
-    }
-  }
+.nav-menu .nav-list a {
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s;
 }
+
+.nav-menu .nav-list a:hover {
+  color: #0066ff; /* Sichqoncha olib borilganda ko'k rang */
+}
+
+.nav-menu .nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu .nav-actions .nav-a {
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-menu .nav-actions .signup-btn {
+  background-color: #0066ff;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.nav-menu .nav-actions .signup-btn:hover {
+  background-color: #0052cc;
+}
+
+.nav-menu .nav-actions select {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+}
+
+/* 🍔 Gamburger tugmasi (Kompyuterda yashirin) */
 .hamburger {
   display: none;
   cursor: pointer;
   background: none;
   border: none;
-
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: #333; // Chiziqlar rangi
-  }
+  padding: 0;
+  outline: none;
 }
 
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+  background-color: #333;
+}
+
+/* 📱 Mobil ekranlar uchun (Maksimal 768px kenglikda) */
 @media (max-width: 768px) {
   .hamburger {
-    display: block; // Gamburger tugmasini ko'rsatish
-
-    &.active {
-      .bar:nth-child(2) {
-        opacity: 0; // O'rtadagi chiziq yo'qoladi
-      }
-      .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg); // Tepani burish
-      }
-      .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg); // Pastni burish
-      }
-    }
+    display: block; /* Mobil versiyada chiqadi */
+    z-index: 100;
   }
 
+  /* Aktiv holatda X shakliga kelishi */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Mobil Menyu */
   .nav-menu {
     position: fixed;
-    left: -100%; // Standart holatda chapda yashirin turadi
-    top: 70px;
+    top: 0;
+    left: -100%; /* Ekrandan tashqarida chapda turadi */
+    width: 75%;  /* Ekranning 75% qismini egallaydi */
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    display: flex;
     flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    transition: 0.3s;
+    align-items: flex-start;
+    padding: 100px 30px 30px 30px;
+    gap: 35px;
+    transition: left 0.4s ease-in-out; /* Sirg'alib kirish animatsiyasi */
+  }
 
-    &.active {
-      left: 0; // Aktiv bo'lganda ekranga chiqadi
-    }
+  .nav-menu.active {
+    left: 0; /* Aktiv bo'lganda ekranga chiqadi */
+  }
+
+  .nav-menu .nav-list {
+    flex-direction: column; /* Linklar tepadagi pastga qator bo'ladi */
+    gap: 25px;
+    width: 100%;
+  }
+
+  .nav-menu .nav-actions {
+    flex-direction: column; /* Tugmalar ham tepadan pastga qator bo'ladi */
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    border-top: 1px solid #eee; /* Ajratuvchi chiziq */
+    padding-top: 25px;
   }
 }

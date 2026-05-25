@@ -132,7 +132,7 @@ export const Hero = () => {
         <CountUp from={0} to={1400} separator="." direction="up" duration={0.5} className="count-up-text" delay={0} />
         <span className="count-up-plus">+</span>
       </div>
-      <p className="hero-label">Online Courses</p>
+      <p className="hero-label">{t('stats.courses')}</p>
     </div>
   </div>
 
@@ -150,7 +150,7 @@ export const Hero = () => {
         <CountUp from={0} to={1100} separator="." direction="up" duration={0.5} className="count-up-text" delay={0} />
         <span className="count-up-plus">+</span>
       </div>
-      <p className="hero-label">Expert Instructors</p>
+      <p className="hero-label">{t('stats.instructors')}</p>
     </div>
   </div>
 
@@ -168,7 +168,7 @@ export const Hero = () => {
         <CountUp from={0} to={800} separator="," direction="up" duration={1} className="count-up-text" delay={0} />
         <span className="count-up-plus">+</span>
       </div>
-      <p className="hero-label">Success Stories</p>
+      <p className="hero-label">{t('stats.stories')}</p>
     </div>
   </div>
 </div>

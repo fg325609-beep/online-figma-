@@ -33,14 +33,30 @@
     "instructors": "Expert Instructors",
     "stories": "Success Stories"
   },
-  "hero": {
-    "title": "Наша платформа в цифрах",
-    "description": "Растите вместе с нами и достигайте своих целей.",
-    "button": "Начать"
+"hero": {
+    "title": "Our Platform in Numbers",
+    "description": "Grow with us and achieve your professional goals.",
+    "button": "Get Started"
   },
   "stats": {
-    "courses": "Онлайн-курсы",
-    "instructors": "Эксперты-инструкторы",
-    "stories": "Истории успеха"
+    "courses": "Online Courses",
+    "instructors": "Expert Instructors",
+    "stories": "Success Stories"
+  },
+  "hero": {
+    "title": "Our Platform in Numbers",
+    "description": "Grow with us and achieve your professional goals.",
+    "button": "Get Started"
+  },
+  "stats": {
+    "courses": "Online Courses",
+    "instructors": "Expert Instructors",
+    "stories": "Success Stories"
+  },
+  "course_find": {
+    "title": "Find Your Course That Makes Bright Future",
+    "description_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies at diam magnis faucibus et faucibus gravida. malesuada fauci bus iaculis eu. Fusce est, consectetur tempor penatibus sed. Ut dolor, vulputate quam nec aliquam aliquam nisl. Auctor eros, iaculis quam nisi,",
+    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit.",
+    "button": "Learn More"
   }
 }

@@ -13,14 +13,30 @@
       "signUp": "Регистрация"
     }
   },
+"hero": {
+    "title": "Наша платформа в цифрах",
+    "description": "Растите вместе с нами и достигайте своих целей.",
+    "button": "Начать"
+  },
+  "stats": {
+    "courses": "Онлайн-курсы",
+    "instructors": "Эксперты-инструкторы",
+    "stories": "Истории успеха"
+  },
   "hero": {
-    "title": "Онлайн-курсы для самостоятельного обучения",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ameth, vestibulum euismod nullam elementum. Urna, posuere nisi sit gravida massa. Ultrices bibendum sagittis pellentesque vitae sit.",
-    "button": "Начать курс",
-    "stats": {
-      "courses": "Онлайн-курсов",
-      "instructors": "Экспертных инструкторов",
-      "stories": "Историй успеха"
-    }
+    "title": "Наша платформа в цифрах",
+    "description": "Растите вместе с нами и достигайте своих целей.",
+    "button": "Начать"
+  },
+  "stats": {
+    "courses": "Онлайн-курсы",
+    "instructors": "Эксперты-инструкторы",
+    "stories": "Истории успеха"
+  },
+  "course_find": {
+    "title": "Найдите свой курс, который создаст светлое будущее",
+    "description_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies at diam magnis faucibus et faucibus gravida. malesuada fauci bus iaculis eu. Fusce est, consectetur tempor penatibus sed. Ut dolor, vulputate quam nec aliquam aliquam nisl. Auctor eros, iaculis quam nisi,",
+    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit.",
+    "button": "Узнать больше"
   }
 }

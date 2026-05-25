@@ -10,168 +10,132 @@
 
 
 }
-header{
-    .container{
-        .navbar{
-            font-family: DM Sans;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 100%;
-            letter-spacing: 0%;
-            
-            max-width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 40px ;
-            nav{
-                gap: 50px ;
-                display: flex;
-                align-items: center;
-                li{
-                    text-decoration: none;
-                color: #1f2937;
-                font-weight: 500;
-                padding: 6px 0;
-                position: relative;
-                transition: color 0.3s ease;
-                ::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 0; // Boshlanishiga kengligi 0
-                    height: 2px;
-                    background-color: #4f46e5; // Chiziq rangi
-                    transition: width 0.3s ease; // Animatsiya tezligi
-                    
-                }
-                &:hover {
-                    color: #4f46e5;
-
-                    &::after {
-                        width: 100%; // Kenglik to'liq 100% bo'ladi
-                    }
-                }
-                }
-            }
-            span{
-                gap: 20px;
-                display: flex;
-                align-items: center;
-                select{
-                    background: transparent;
-                    border: none;
-                    outline: none;
-                    border: 1px solid;
-                    option{
-                        background: transparent;
-                         border: none;
-                         outline: none;
-                    }
-                }
-                .nav-a{
-                    padding: 10px 20px;
-                    border: solid 1px rgb(255, 255, 255) ;
-                    border-radius: 30px;
-                    transition: all 0.5s;
-                   
-               &:hover{
-                background: darkcyan;
-                color: white;
-               }
-                }
-            }
-        }
-    }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  position: relative;
 }
 
-// ... (oldingi yozgan asosiy stillaringiz shu yerda turadi)
+// Katta ekranlar uchun (Kompyuterda yonma-yon turadi)
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px; // Ro'yxat va Tugmalar orasidagi masofa
 
-// 🍔 Burger icon uchun umumiy stillar (Tinch holatda desktopda ko'rinmaydi)
+  .nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    background: none;
-    border: none;
-    gap: 6px;
-    z-index: 1001; // Menyu ustida turishi uchun
-
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #1f2937; // Chiziqlar rangi
-        transition: all 0.3s ease;
-        border-radius: 2px;
-    }
-
-    // Icon bosilganda X (yopish) shakliga kirishi uchun animatsiya
-    &.active {
-        .bar:nth-child(2) {
-            opacity: 0; // O'rtadagi chiziq yo'qoladi
-        }
-        .bar:nth-child(1) {
-            transform: translateY(9px) rotate(45deg); // Tepagi chiziq buriladi
-        }
-        .bar:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg); // Pastki chiziq buriladi
-        }
-    }
+  display: none; // Kompyuterda yashirin
 }
 
-// 📱 MOBIL QURILMALAR UCHUN MEDIA QUERY (768px va undan kichik ekranlar)
+// 📱 Mobil ekranlar uchun (Maksimal 768px kenglikda)
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex; // Mobil ekranda burger icon ko'rinadi
+  .hamburger {
+    display: block; // Gamburger tugmasi chiqadi
+    z-index: 10;
+    
+    &.active {
+      .bar:nth-child(2) { opacity: 0; }
+      .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+      .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    }
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100%; // Ekrandan tashqarida turadi
+    width: 70%;  // Ekranning 70% qismini egallaydi (xohlasangiz 100% qiling)
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    
+    // Ichidagi elementlarni tepadan pastga qator qilib joylashtiramiz
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 100px 30px 30px 30px; // Gamburger to'sib qo'ymasligi uchun tepadan joy tashlaymiz
+    gap: 40px; 
+    transition: 0.4s ease-in-out;
+
+    &.active {
+      left: 0; // Menyu ochilganda ekranga sirg'alib kiradi
     }
 
-    header {
-        .navbar {
-            position: relative;
-
-            // Nav menyuni mobil formatga (Modal/Drop-down) o'tkazamiz
-            .nav-menu {
-                position: absolute;
-                top: 100%; // Headerning shundoq pastidan boshlanadi
-                left: 0;
-                width: 100%;
-                background-color: #ffffff;
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-                padding: 20px 0;
-                
-                // Tinch holatda yashirib qo'yamiz (tepaga yashirish)
-                transform: translateY(-150%);
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.4s ease-in-out;
-                z-index: 999;
-
-                ul {
-                    flex-direction: column; // Elementlarni vertikal qator qiladi
-                    align-items: center;
-                    gap: 20px;
-                    padding: 0;
-                }
-
-                // Burger icon bosilganda ushbu klass ishga tushadi va menyu pastga tushadi
-                &.active {
-                    transform: translateY(0);
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
-
-            // Kirish tugmalari va selectni ham mobilga moslash (ixtiyoriy)
-            .nav-actions {
-                margin-right: 40px; // Burger iconga joy ochish uchun
-                gap: 10px;
-                
-                .nav-a {
-                    font-size: 13px;
-                }
-            }
-        }
+    .nav-list {
+      flex-direction: column; // Linklar tepadan pastga tushadi
+      gap: 25px;
+      padding: 0;
+      width: 100%;
     }
+
+    .nav-actions {
+      flex-direction: column; // Tugmalar ham mobil versiyada tepadan pastga tushadi
+      align-items: flex-start;
+      gap: 20px;
+      width: 100%;
+      border-top: 1px solid #eee; // Ajratuvchi chiziq
+      padding-top: 20px;
+    }
+  }
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #333; // Chiziqlar rangi
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; // Gamburger tugmasini ko'rsatish
+
+    &.active {
+      .bar:nth-child(2) {
+        opacity: 0; // O'rtadagi chiziq yo'qoladi
+      }
+      .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); // Tepani burish
+      }
+      .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); // Pastni burish
+      }
+    }
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%; // Standart holatda chapda yashirin turadi
+    top: 70px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    transition: 0.3s;
+
+    &.active {
+      left: 0; // Aktiv bo'lganda ekranga chiqadi
+    }
+  }
 }

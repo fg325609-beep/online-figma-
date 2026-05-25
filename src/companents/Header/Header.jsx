@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Header.scss'; 
+import Button from '../button/Button';
+
 
 const Header = () => {
     const { t, i18n } = useTranslation();
@@ -37,10 +39,9 @@ const Header = () => {
                             <li><a href="#contact" onClick={handleLinkClick}>{t('navbar.links.contact')}</a></li>
                         </ul>
 
-                        {/* Tugmalar va til tanlash endi nav-menu ichida (ul dan tashqarida) */}
                         <div className="nav-actions">
-                            <a className='nav-a' href="#signin" onClick={handleLinkClick}>{t('navbar.actions.signIn')}</a>
-                            <a className='nav-a signup-btn' href="#signup" onClick={handleLinkClick}>{t('navbar.actions.signUp')}</a>
+                            <Button className='nav-a' href="#signin" onClick={handleLinkClick}>{t('navbar.actions.signIn')}</Button>
+                            <Button className='nav-a signup-btn' href="#signup" onClick={handleLinkClick}>{t('navbar.actions.signUp')}</Button>
                             
                             <select 
                                 onChange={(e) => changeLanguage(e.target.value)} 
@@ -53,7 +54,6 @@ const Header = () => {
                         </div>
                     </nav>
 
-                    {/* Gamburger tugmasi */}
                     <button 
                         className={isMenuOpen ? "hamburger active" : "hamburger"} 
                         onClick={toggleMenu}

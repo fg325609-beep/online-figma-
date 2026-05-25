@@ -3,6 +3,8 @@ import "./Hero.scss"
 import { useTranslation } from 'react-i18next';
 import { useInView, useMotionValue, useSpring } from 'motion/react';
 import { useCallback, useEffect, useRef } from 'react';
+import Button from '../button/Button';
+
 
 export default function CountUp({
   to,
@@ -113,11 +115,10 @@ export const Hero = () => {
             <div className="hero">
                 <h1>{t('hero.title')}</h1>
                 <p>{t('hero.description')}</p>
-                <button type="submit">{t('hero.button')}</button>
+                <Button type="submit">{t('button.add')}</Button>
             </div>
             
            <div className="bootom-hero">
-  {/* 1-blok: Online Courses */}
   <div className="hero-item">
     <div className="hero-icon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -136,7 +137,6 @@ export const Hero = () => {
     </div>
   </div>
 
-  {/* 2-blok: Expert Instructors */}
   <div className="hero-item">
     <div className="hero-icon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -154,7 +154,6 @@ export const Hero = () => {
     </div>
   </div>
 
-  {/* 3-blok: Success Stories */}
   <div className="hero-item">
     <div className="hero-icon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

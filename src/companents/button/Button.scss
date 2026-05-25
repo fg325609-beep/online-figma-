@@ -1,0 +1,56 @@
+// Jinsi tugma stillari
+.denim-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px; // Tikilgan ip uchun joy
+  background-color: #1d3557; // To'q jinsi rangi
+  border: 2px solid #2b4c7e;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15), inset 0 1px 3px rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+
+  // Jinsi matosining chiziqli teksturasi (CSS Gradient orqali)
+  background-image: 
+    linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%), 
+    linear-gradient(-45deg, rgba(255,255,255,0.05) 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.05) 75%), 
+    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.05) 75%);
+  background-size: 4px 4px;
+
+  // Jinsining o'ziga xos sarg'ish ipli chizig'i (Stitch effect)
+  &__inner {
+    display: block;
+    padding: 10px 24px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border: 1px dashed #e9c46a; // Sarg'ish ipli chok (tikuv) effekti
+    border-radius: 6px;
+    background: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  // Hover (Sichqoncha kelganda) effekti
+  &:hover {
+    background-color: #2b4c7e; // Rang ochiladi
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), inset 0 1px 3px rgba(255, 255, 255, 0.3);
+
+    .denim-btn__inner {
+      border-color: #f4a261; // Ip rangi yorqinlashadi
+    }
+  }
+
+  // Active (Bosilganda) effekti
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+}

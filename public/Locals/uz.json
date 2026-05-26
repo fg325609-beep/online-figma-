@@ -65,7 +65,7 @@
       "title": "Bu qanday ishlaydi",
       "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "subtitle_2": "Aliquam et hendrerit euismod fusce sit.",
-      "cards": {
+      
         "card_1": {
           "title": "Onlayn ta'lim oling",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
@@ -82,7 +82,7 @@
           "title": "Umrbod ko'mak",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
         }
-      }
+      
     }
   
   

@@ -74,7 +74,7 @@
       "title": "How It Work",
       "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "subtitle_2": "Aliquam et hendrerit euismod fusce sit.",
-      "cards": {
+    
         "card_1": {
           "title": "Learn More Online",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
@@ -93,5 +93,4 @@
         }
       }
     }
-  }
-
+  

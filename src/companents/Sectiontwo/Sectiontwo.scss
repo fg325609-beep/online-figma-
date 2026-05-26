@@ -9,40 +9,120 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-section{
+section {
     width: 100%;
-    .sect-two{
+    max-width: 1200px; // Sayt chetlariga yopishib qolmasligi uchun
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .sect-two {
         text-align: center;
-        padding: 100px 0;
-        .sect-two-title{
+        padding: 60px 0 20px 0;
+
+        .sect-two-title {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; // Sarlavha va uning ostidagi matn orasidagi masofa
+            margin-bottom: 40px;
+
+            h1 { // .h1 emas, oddiy h1 tegi o'zi yoziladi
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 120%;
+                color: #1a1a1a;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 155%;
+                color: #666;
+            }
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); // 4 ta kartani yonma-yon tekis joylaydi
+        gap: 30px; // Kartalar orasidagi masofa
+        padding-bottom: 60px;
+
+        .card {
+            width: 100%; // 60% emas, 100% bo'lishi kerak, chunki grid o'zi kenglikni bo'ladi
             text-align: center;
             display: flex;
             flex-direction: column;
-            gap: 80px;
-  .h1{
-              height: 1px;
-            font-family: DM Sans;
-font-weight: 700;
-font-size: 48px;
-line-height: 100%;
-letter-spacing: 0%;
-  }
+            align-items: center;
+            gap: 16px; // Ikonka, h1 va p orasidagi masofalar
 
-        }
-        p{
-            font-family: DM Sans;
-font-weight: 400;
-font-size: 16px;
-line-height: 155%;
-letter-spacing: 0%;
-text-align: center;
+            img {
+                width: 70px;
+                height: 70px;
+                object-fit: contain;
+            }
 
+            h1 { // Karta ichidagi kichik sarlavha
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 130%;
+                color: #1a1a1a;
+            }
+
+            p { // Karta ichidagi ta'rif (Description) endi aniq ishlaydi!
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                color: #666;
+            }
         }
     }
-    .cards{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 50px 0;
+}
+
+/* ==========================================================
+   MEDIA QUERIES (RESPONSIVE DIZAYN)
+   ========================================================== */
+
+// Planshetlar uchun (Noutbuk va kichikroq ekranlar)
+@media (max-width: 992px) {
+    section {
+        .cards {
+            grid-template-columns: repeat(2, 1fr); // Kartalar 2 qator, 2 tadan bo'lib qoladi
+            gap: 40px;
+        }
+        .sect-two .sect-two-title h1 {
+            font-size: 38px; // Ekran kichrayganda asosiy sarlavha ham biroz kichrayadi
+        }
+    }
+}
+
+// Mobil telefonlar va eng kichik ekranlar uchun (300px gacha)
+@media (max-width: 576px) {
+    section {
+        .sect-two {
+            padding: 40px 0 10px 0;
+            
+            .sect-two-title {
+                h1 {
+                    font-size: 28px; // Telefon ekrani uchun qulay sarlavha o'lchami
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .cards {
+            grid-template-columns: 1fr; // Telefonda hamma kartalar 1 qatordan tushadi
+            gap: 35px;
+
+            .card {
+                h1 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 13px; // 300px ekranda matn sig'ishi uchun biroz kichraytirildi
+                }
+            }
+        }
     }
 }

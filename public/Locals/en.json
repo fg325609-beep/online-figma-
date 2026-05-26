@@ -91,6 +91,38 @@
           "title": "Life Time Support",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
         }
+      },
+      "online_courses": {
+      "title": "Our All The Online Courses",
+      "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo.",
+      "subtitle_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "button_view_all": "View All Course",
+      "cards": {
+        "card_1": {
+          "title": "Development",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_2": {
+          "title": "Android Developer",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_3": {
+          "title": "Java Script Course",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_4": {
+          "title": "Android Developer",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_5": {
+          "title": "Java Script Course",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_6": {
+          "title": "Basic Marketing",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        }
       }
+    }
     }
   

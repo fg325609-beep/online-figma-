@@ -83,6 +83,38 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
         }
       
+    },
+    "online_courses": {
+      "title": "Bizning barcha onlayn kurslarimiz",
+      "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo.",
+      "subtitle_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "button_view_all": "Barcha kurslarni ko'rish",
+      "cards": {
+        "card_1": {
+          "title": "Dasturlash",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_2": {
+          "title": "Android dasturchi",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_3": {
+          "title": "JavaScript kursi",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_4": {
+          "title": "Android dasturchi",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_5": {
+          "title": "JavaScript kursi",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        },
+        "card_6": {
+          "title": "Asosiy marketing",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+        }
+      }
     }
   
   

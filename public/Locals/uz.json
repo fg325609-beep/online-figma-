@@ -59,6 +59,31 @@
     "search": "Qidirish",
     "submit": "Yuborish",
     "clickMe": "Meni bos"
+  },
+  "uz": {
+    "how_it_work": {
+      "title": "Bu qanday ishlaydi",
+      "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "subtitle_2": "Aliquam et hendrerit euismod fusce sit.",
+      "cards": {
+        "card_1": {
+          "title": "Onlayn ta'lim oling",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        },
+        "card_2": {
+          "title": "Qaydlar yozish",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        },
+        "card_3": {
+          "title": "Interaktiv darslar",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        },
+        "card_4": {
+          "title": "Umrbod ko'mak",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        }
+      }
+    }
   }
   
 }

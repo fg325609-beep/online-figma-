@@ -48,5 +48,30 @@
     "search": "Поиск",
     "submit": "Отправить",
     "clickMe": "Нажми меня"
+  },
+  "ru": {
+    "how_it_work": {
+      "title": "Как это работает",
+      "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "subtitle_2": "Aliquam et hendrerit euismod fusce sit.",
+      "cards": {
+        "card_1": {
+          "title": "Учитесь онлайн",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        },
+        "card_2": {
+          "title": "Ведение заметок",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        },
+        "card_3": {
+          "title": "Интерактивные сессии",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        },
+        "card_4": {
+          "title": "Пожизненная поддержка",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        }
+      }
+    }
   }
 }

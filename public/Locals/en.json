@@ -68,6 +68,31 @@
     "search": "Search",
     "submit": "Submit",
     "clickMe": "Click Me"
+  },
+  "en": {
+    "how_it_work": {
+      "title": "How It Work",
+      "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "subtitle_2": "Aliquam et hendrerit euismod fusce sit.",
+      "cards": {
+        "card_1": {
+          "title": "Learn More Online",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        },
+        "card_2": {
+          "title": "Writing Notes",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        },
+        "card_3": {
+          "title": "Interactive Sessions",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        },
+        "card_4": {
+          "title": "Life Time Support",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit."
+        }
+      }
+    }
   }
 
 }

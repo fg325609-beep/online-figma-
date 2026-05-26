@@ -69,7 +69,7 @@
     "submit": "Submit",
     "clickMe": "Click Me"
   },
-  "en": {
+ 
     "how_it_work": {
       "title": "How It Work",
       "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -95,4 +95,3 @@
     }
   }
 
-}

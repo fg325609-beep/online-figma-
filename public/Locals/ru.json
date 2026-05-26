@@ -49,7 +49,7 @@
     "submit": "Отправить",
     "clickMe": "Нажми меня"
   },
-  "ru": {
+ 
     "how_it_work": {
       "title": "Как это работает",
       "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -73,5 +73,5 @@
         }
       }
     }
-  }
+  
 }

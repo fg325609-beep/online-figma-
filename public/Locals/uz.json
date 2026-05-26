@@ -60,7 +60,7 @@
     "submit": "Yuborish",
     "clickMe": "Meni bos"
   },
-  "uz": {
+ 
     "how_it_work": {
       "title": "Bu qanday ishlaydi",
       "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -84,6 +84,6 @@
         }
       }
     }
-  }
+  
   
 }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Header.scss'; 
-import Button from '../button/Button';
 
 
 const Header = () => {
@@ -18,7 +17,6 @@ const Header = () => {
         }
     };
 
-    // Har safar link bosilganda menyu yopilishi uchun funksiya
     const handleLinkClick = () => {
         setIsMenuOpen(false);
     };
@@ -29,7 +27,6 @@ const Header = () => {
                 <div className="navbar">
                     <h1 className='logo'>{t('navbar.logo')}</h1>
                     
-                    {/* NAV-MENU endi ham ul-ro'yxatni, ham tugmalarni ichiga oladi */}
                     <nav className={isMenuOpen ? "nav-menu active" : "nav-menu"}>
                         <ul className="nav-list">
                             <li><a href="#home" onClick={handleLinkClick}>{t('navbar.links.home')}</a></li>
@@ -40,8 +37,8 @@ const Header = () => {
                         </ul>
 
                         <div className="nav-actions">
-                            <Button className='nav-a' href="#signin" onClick={handleLinkClick}>{t('navbar.actions.signIn')}</Button>
-                            <Button className='nav-a signup-btn' href="#signup" onClick={handleLinkClick}>{t('navbar.actions.signUp')}</Button>
+                            <a className='nav-a' href="#signin" onClick={handleLinkClick}>{t('navbar.actions.signIn')}</a>
+                            <a className='nav-a signup-btn' href="#signup" onClick={handleLinkClick}>{t('navbar.actions.signUp')}</a>
                             
                             <select 
                                 onChange={(e) => changeLanguage(e.target.value)} 

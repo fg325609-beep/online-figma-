@@ -24,32 +24,35 @@ section{
        letter-spacing: 0%;
        
         
-    }
-    p{
-        font-family: DM Sans;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 155%;
-      letter-spacing: 0%;
-      
-    }
-    span{
-        font-family: DM Sans;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-letter-spacing: 0%;
-
-    }
-    button{
-        font-family: DM Sans;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0%;
-
+       p{
+           font-family: DM Sans;
+           font-weight: 400;
+           font-size: 16px;
+           line-height: 155%;
+           letter-spacing: 0%;
+           
+        }
+        span{
+            font-family: DM Sans;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            
+        }
+        button{
+            font-family: DM Sans;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            
+        }
     }
     .sect-right{
-
+  width: 50%;
+  img{
+    width: 100%;
+  }
     }
 }

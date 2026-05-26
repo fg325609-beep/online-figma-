@@ -3,7 +3,7 @@ import "./Hero.scss"
 import { useTranslation } from 'react-i18next';
 import { useInView, useMotionValue, useSpring } from 'motion/react';
 import { useCallback, useEffect, useRef } from 'react';
-import Button from '../button/Button';
+
 
 
 export default function CountUp({
@@ -115,7 +115,7 @@ export const Hero = () => {
             <div className="hero">
                 <h1>{t('hero.title')}</h1>
                 <p>{t('hero.description')}</p>
-                <Button type="submit">{t('button.add')}</Button>
+                <button type="submit">{t('hero.button')}</button>
             </div>
             
            <div className="bootom-hero">

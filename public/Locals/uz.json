@@ -115,7 +115,48 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
         }
       }
+    },
+"title": "Bizning barcha onlayn kurslarimiz",
+  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "button": "Barcha kurslarni ko'rish",
+  "courses": [
+    {
+      "stats": { "students": "5.8k", "views": "69k", "rating": "4.5" },
+      "title": "Dasturlash (Development)",
+      "price": "$150",
+      "description": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+    },
+    {
+      "stats": { "students": "5.8k", "views": "69k", "rating": "4.5" },
+      "title": "Android dasturchi",
+      "price": "$130",
+      "description": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+    },
+    {
+      "stats": { "students": "5.8k", "views": "69k", "rating": "4.5" },
+      "title": "JavaScript kursi",
+      "price": "$140",
+      "description": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+    },
+    {
+      "stats": { "students": "5.8k", "views": "69k", "rating": "4.5" },
+      "title": "Android dasturchi",
+      "price": "$120",
+      "description": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+    },
+    {
+      "stats": { "students": "5.8k", "views": "69k", "rating": "4.5" },
+      "title": "JavaScript kursi",
+      "price": "$120",
+      "description": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
+    },
+    {
+      "stats": { "students": "5.8k", "views": "69k", "rating": "4.5" },
+      "title": "Asosiy marketing",
+      "price": "$100",
+      "description": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
     }
+  ]
   
   
 }

@@ -6,6 +6,8 @@ import Sectionone from './companents/Sectionone/Sectionone';
 import Sectiontwo from './companents/Sectiontwo/Sectiontwo';
 import Sectiontheare from './companents/Sectiontheare/Sectiontheare';
 
+
+
 const App = () => {
   return (
     <div>
@@ -14,6 +16,7 @@ const App = () => {
       <Sectionone/>
       <Sectiontwo/>
       <Sectiontheare/>
+     
 
 
     </div>

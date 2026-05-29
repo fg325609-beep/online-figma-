@@ -45,6 +45,7 @@ const Sectiontheare = () => {
             </div>
           ))}
         </div>
+        <button className="view-all-btn">{t('button')}</button>
       </section>
     </div>
   )

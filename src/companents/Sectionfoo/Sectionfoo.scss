@@ -1,0 +1,117 @@
+// Ranglar palitrasi
+$primary-color: #1e75ff; // Ko'k urg'u beruvchi rang
+$text-dark: #111111;     // Raqamlar rangi
+$text-gray: #666666;     // Izoh matni rangi
+$timer-bg: #ffffff;      // Kartochkalar foni (agar kerak bo'lsa)
+
+.sect-foo {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #f8faff; // Mayin och fon
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+
+  .timers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // Kompyuterda 4 ta raqam yonma-yon
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    
+    .timer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      
+      // Raqam va "+" belgisi konteyneri
+      .num-box {
+        display: flex;
+        align-items: baseline; // "+" belgisi raqamning pastki chizig'ida tekis turadi
+        gap: 2px;
+        
+        .count-up-text {
+          font-size: 3.5rem; // Katta, yaqqol ko'rinadigan raqamlar
+          font-weight: 700;
+          color: $text-dark;
+          line-height: 1;
+        }
+
+        span {
+          font-size: 2.2rem;
+          font-weight: 600;
+          color: $primary-color; // "+" belgisi ko'k rangda ajralib turadi
+        }
+      }
+
+      // Raqam ostidagi izoh matni
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $text-gray;
+        margin-top: 10px;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+
+// ==========================================
+// MEDIA SO'ROVLARI (RESPONSIVE)
+// ==========================================
+
+// Planshetlar uchun (max-width: 992px)
+@media (max-width: 992px) {
+  .sect-foo {
+    padding: 60px 20px;
+
+    .timers {
+      grid-template-columns: repeat(2, 1fr); // 2 tadan 2 qator bo'lib qoladi
+      gap: 30px;
+      
+      .timer {
+        .num-box {
+          .count-up-text {
+            font-size: 2.8rem; // Raqamlar biroz kichrayadi
+          }
+          span {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Kichik telefonlar uchun (max-width: 500px)
+@media (max-width: 500px) {
+  .sect-foo {
+    padding: 40px 15px;
+
+    .timers {
+      grid-template-columns: 1fr; // Telefonlarda hammasi 1 qatordan tikka tushadi
+      gap: 35px;
+      
+      .timer {
+        padding: 10px;
+        
+        .num-box {
+          .count-up-text {
+            font-size: 2.5rem;
+          }
+          span {
+            font-size: 1.6rem;
+          }
+        }
+        
+        p {
+          font-size: 0.95rem;
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}

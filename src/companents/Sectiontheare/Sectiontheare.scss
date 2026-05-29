@@ -1,0 +1,200 @@
+// Ranglar va o'zgaruvchilar (Figma asosida)
+$bg-color: #eef4ff;        // Sahifaning orqa foni (och havo rang)
+$card-bg: #ffffff;        // Kartochka foni
+$text-main: #000000;      // Asosiy sarlavhalar rangi
+$text-muted: #666666;     // Kichik va matn tariflari rangi
+$accent-blue: #1e75ff;    // Narx va tugmalar uchun ko'k rang
+
+.section-theare {
+
+  padding: 60px 20px;
+  min-height: 100vh;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // Asosiy katta sarlavha "Our All The Online Courses"
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $text-main;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  // Sarlavha ostidagi matn (Subtitle)
+  p {
+    font-size: 0.95rem;
+    color: $text-muted;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 45px;
+  }
+
+  // Kartochkalar paneli (Grid sistema)
+  .sect-foo-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // Kompyuterda 3 ta ustun
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+
+    // Har bitta Kurs kartochkasi
+    .card {
+      background-color: $card-bg;
+      border-radius: 16px; // Figmadagidek silliq chetlar
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); // Yengil Figma soyasi
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(30, 117, 255, 0.1);
+      }
+
+      // Kurs rasmi
+      .course-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px; // Rasm chetlarini yumaloq qilish
+        margin-bottom: 16px;
+      }
+
+      // Statistika qismi (👤, 👁️, ⭐)
+      .card-stats {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 14px;
+
+        span {
+          font-size: 0.85rem;
+          color: $text-muted;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+
+      // Kurs nomi (h2)
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $text-main;
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
+
+      // Kurs tarifi (p) - faqat kartochka ichidagisi uchun
+      p {
+        font-size: 0.88rem;
+        color: $text-muted;
+        text-align: left; // Chap tomondan tekislash
+        line-height: 1.5;
+        margin-bottom: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; // Matn juda uzun bo'lsa 3 qatordan keyin "..." qiladi
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      // Kurs narxi
+      .price {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $accent-blue;
+        margin-top: auto; // Narxni har doim kartochka pastiga yopishtiradi
+        align-self: flex-end; // Narxni o'ng tomonga suradi (Figmadagidek)
+      }
+    }
+  }
+}
+.section-theare {
+  // ... oldingi yozilgan kodlar shu yerda turibdi ...
+
+  // "View All Course" tugmasi uchun dizayn
+  .view-all-btn {
+    background-color: #1e75ff; // Figmadagi yorqin ko'k rang
+    color: #ffffff;            // Oq matn
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 32px;        // Tugma ichki masofasi (uzunchoq bo'lishi uchun)
+    border: none;              // Atrofidagi chiziqni olib tashlash
+    border-radius: 8px;        // Burchaklarini yumaloq qilish
+    cursor: pointer;
+    margin-top: 50px;          // Kartochkalardan pastga surish
+    display: inline-block;
+    transition: all 0.3s ease;  // Effektlar silliq o'tishi uchun
+    box-shadow: 0 4px 14px rgba(30, 117, 255, 0.3); // Ko'k rangli mayin soya
+
+    // Sichqoncha ustiga kelganda (Hover effekti)
+    &:hover {
+      background-color: #1565e6; // Biroz to'qroq ko'k rangga o'tadi
+      box-shadow: 0 6px 20px rgba(30, 117, 255, 0.4); // Soya kuchayadi
+      transform: translateY(-2px); // Tugma biroz tepaga ko'tariladi
+    }
+
+    // Tugma bosilganda (Active effekti)
+    &:active {
+      transform: translateY(0); // Joyiga qaytadi
+      box-shadow: 0 4px 10px rgba(30, 117, 255, 0.2);
+    }
+  }
+}
+
+// Telefonlar uchun media so'rov ichiga (ixtiyoriy, tugmani sal kichraytirish uchun):
+@media (max-width: 650px) {
+  .section-theare {
+    .view-all-btn {
+      padding: 12px 24px;
+      font-size: 0.9rem;
+      margin-top: 35px;
+      width: 100%; // Telefon ekranida tugma to'liq eniga yoyiladi
+      max-width: 300px; // Lekin haddan tashqari cho'zilib ketmaydi
+    }
+  }
+}
+
+// ==========================================
+// MEDIA SO'ROVLARI (RESPONSIVE DESIGN)
+// ==========================================
+
+// Kichik noutbuklar va planshetlar uchun (max-width: 1024px)
+@media (max-width: 1024px) {
+  .section-theare {
+    .sect-foo-cards {
+      grid-template-columns: repeat(2, 1fr); // 2 ta ustun bo'lib qoladi
+      gap: 20px;
+    }
+  }
+}
+
+// Telefonlar uchun (max-width: 650px)
+@media (max-width: 650px) {
+  .section-theare {
+    padding: 40px 15px;
+
+    h1 {
+      font-size: 1.8rem; // Sarlavha biroz kichrayadi
+    }
+
+    .sect-foo-cards {
+      grid-template-columns: 1fr; // Telefonlarda 1 tadan qator bo'lib tushadi
+      gap: 25px;
+      
+      .card {
+        padding: 15px; // Ichki masofa qisqaradi
+        
+        .course-img {
+          height: 180px; // Rasm balandligi moslashadi
+        }
+      }
+    }
+  }
+}

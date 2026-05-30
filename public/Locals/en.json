@@ -166,6 +166,10 @@
       "price": "$100",
       "description": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
     }
-  ]
+  ],
+  "heading": "What Our Students Say",
+  "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit amet.",
+  "input_placeholder": "Enter your email...",
+  "button_text": "Subscribe"
     }
   

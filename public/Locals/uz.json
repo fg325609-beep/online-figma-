@@ -156,7 +156,11 @@
       "price": "$100",
       "description": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit."
     }
-  ]
+  ],
+  "heading": "Talabalarimiz nima deydi",
+  "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit amet.",
+  "input_placeholder": "Elektron pochtangizni kiriting...",
+  "button_text": "Obuna bo'lish"
   
   
 }

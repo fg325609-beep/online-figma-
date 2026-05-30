@@ -1,0 +1,153 @@
+.footer {
+  background-color: #deeaff; // Rasmdagi och ko'k fon rang
+  padding: 80px 0;
+  font-family: 'DM Sans', sans-serif;
+  color: #2e3e5c; // Matnning asosiy to'q rangi
+
+  .fcontainer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr; // 1-ustun matni uzunligi uchun sal kengroq
+    gap: 40px;
+    box-sizing: border-box;
+  }
+
+  .fcard {
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #0b132a;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 30px 0 16px 0;
+      color: #0b132a;
+    }
+
+    .desc {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #4f5665;
+    }
+
+    /* Ijtimoiy tarmoq tugchalari */
+    .social-icons {
+      display: flex;
+      gap: 12px;
+
+      .icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        color: #1b74e4; // Ikonka rangi ko'k
+        font-size: 16px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+
+        &:hover {
+          background-color: #1b74e4;
+          color: #ffffff;
+          transform: translateY(-3px);
+        }
+      }
+    }
+
+    /* Linklar ro'yxati (2 va 3-ustunlar) */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        .arrow-icon {
+          font-size: 12px;
+          color: #1b74e4; // Ko'k rangli yo'naltirgich arrow
+          margin-right: 12px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #4f5665;
+          font-size: 15px;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: #1b74e4;
+          }
+        }
+      }
+    }
+
+    /* Kontakt bo'limi (4-ustun) */
+    .contact-info {
+      .address {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #4f5665;
+        margin-bottom: 20px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+
+        .contact-icon {
+          font-size: 16px;
+          color: #0b132a;
+          width: 20px; // Ikonkalar tekis turishi uchun aniq en
+          margin-right: 12px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #4f5665;
+          font-size: 15px;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: #1b74e4;
+          }
+        }
+      }
+    }
+  }
+
+  /* 📱 Responsivlik qismi */
+  @media (max-width: 992px) {
+    .fcontainer {
+      grid-template-columns: 1fr 1fr; // Planshetlarda 2 tadan ustun bo'lib qoladi
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 60px 0;
+
+    .fcontainer {
+      grid-template-columns: 1fr; // Telefonlarda hammasi 1 qator bo'lib ustma-ust tushadi
+      gap: 32px;
+    }
+
+    .fcard {
+      h2 {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

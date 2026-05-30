@@ -148,6 +148,34 @@
   "heading": "Что говорят наши студенты",
   "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit amet.",
   "input_placeholder": "Введите ваш email...",
-  "button_text": "Подписаться"
+  "button_text": "Подписаться",
+  "footer": {
+    "education": {
+      "title": "Образование",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vestibulum euismod nullam the elementum. Urna, posuere nisi sit gravid."
+    },
+    "follow_us": "Подписывайтесь на нас",
+    "feature_links": {
+      "title": "Полезные ссылки",
+      "about_us": "О нас",
+      "graduation": "Выпускной",
+      "scholarship": "Стипендии",
+      "admissions": "Поступление",
+      "international": "Международный",
+      "events": "Мероприятия"
+    },
+    "support": {
+      "title": "Поддержка",
+      "language": "Язык",
+      "wordpress": "WordPress",
+      "privacy": "Конфиденциальность",
+      "faqs": "Вопросы и ответы",
+      "support_link": "Поддержка"
+    },
+    "contact_us": {
+      "title": "Контакты",
+      "address": "230, район Мирпур, Мирпур 10, Дакка, Бангладеш"
+    }
+  }
     }
   

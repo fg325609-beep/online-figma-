@@ -170,6 +170,34 @@
   "heading": "What Our Students Say",
   "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit amet.",
   "input_placeholder": "Enter your email...",
-  "button_text": "Subscribe"
+  "button_text": "Subscribe",
+  "footer": {
+    "education": {
+      "title": "Education",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vestibulum euismod nullam the elementum. Urna, posuere nisi sit gravid."
+    },
+    "follow_us": "Follow Us",
+    "feature_links": {
+      "title": "Feature Links",
+      "about_us": "About Us",
+      "graduation": "Graduation",
+      "scholarship": "Scholarship",
+      "admissions": "Admissions",
+      "international": "International",
+      "events": "Events"
+    },
+    "support": {
+      "title": "Support",
+      "language": "Language",
+      "wordpress": "WordPress",
+      "privacy": "Privacy",
+      "faqs": "FAQs",
+      "support_link": "Support"
+    },
+    "contact_us": {
+      "title": "Contact Us",
+      "address": "230,Mirpur Area, Mirpur 10, Dhaka,Bangladesh"
+    }
+  }
     }
   

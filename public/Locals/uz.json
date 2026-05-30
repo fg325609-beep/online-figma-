@@ -160,7 +160,35 @@
   "heading": "Talabalarimiz nima deydi",
   "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. Lorem ipsum dolor sit amet.",
   "input_placeholder": "Elektron pochtangizni kiriting...",
-  "button_text": "Obuna bo'lish"
+  "button_text": "Obuna bo'lish",
+  "footer": {
+    "education": {
+      "title": "Ta'lim",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vestibulum euismod nullam the elementum. Urna, posuere nisi sit gravid."
+    },
+    "follow_us": "Bizni kuzating",
+    "feature_links": {
+      "title": "Foydali havolalar",
+      "about_us": "Biz haqimizda",
+      "graduation": "Bitiruv",
+      "scholarship": "Grantlar",
+      "admissions": "Qabul",
+      "international": "Xalqaro",
+      "events": "Tadbirlar"
+    },
+    "support": {
+      "title": "Yordam",
+      "language": "Til",
+      "wordpress": "WordPress",
+      "privacy": "Maxfiylik siyosati",
+      "faqs": "Ko'p beriladigan savollar",
+      "support_link": "Qo'llab-quvvatlash"
+    },
+    "contact_us": {
+      "title": "Aloqa",
+      "address": "230, Mirpur hududi, Mirpur 10, Dakka, Bangladesh"
+    }
+  }
   
   
 }

@@ -7,6 +7,8 @@ import Sectiontwo from './companents/Sectiontwo/Sectiontwo';
 import Sectiontheare from './companents/Sectiontheare/Sectiontheare';
 import Sectionfoo from './companents/Sectionfoo/Sectionfoo';
 import Sectionfive from './companents/Sectionfive/Sectionfive';
+import Footer from './companents/Footer/Footer';
+
 
 
 
@@ -23,6 +25,7 @@ const App = () => {
       <Sectiontheare/>
       <Sectionfoo/>
       <Sectionfive/>
+      <Footer/>
      
 
 
